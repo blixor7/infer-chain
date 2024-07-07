@@ -1,0 +1,33 @@
+{
+  "name": "solana-native-typescript",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build:settlement": "scripts/build.sh settlement",
+    "vbuild:settlement": "scripts/verifiable-build.sh settlement",
+    "test": "jest --verbose ./tests/",
+    "test:local": "",
+    "test:counter": "jest ./tests/counter/unit/initialize.test.ts",
+    "clean:docker": "",
+    "cli": ""
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.93.2",
+    "borsh": "^2.0.0",
+    "bs58": "^6.0.0",
+    "buffer": "^6.0.3",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
+    "@types/bn.js": "^5.1.5",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.9",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.3.2",
+    "typescript": "^5.5.2"
+  }
+}
